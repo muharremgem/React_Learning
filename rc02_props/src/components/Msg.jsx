@@ -1,6 +1,6 @@
 import React from "react";
 
-const Msg = ({ name, age}) => {
+const Msg = ({ name, age }) => {
   // const { name } = props;
 
   return (
