@@ -12,6 +12,12 @@
 import img2 from "../img/spring2.jpg";
 
 const Content = () => {
+  const imgStyle = {
+    display: "block",
+    width: "300px",
+    margin: "1rem auto",
+  };
+
   return (
     <div>
       <h2 style={{ color: "red" }}>React Js</h2>
@@ -20,10 +26,11 @@ const Content = () => {
         kütüphanesidir.
       </p>
       <img
+        style={imgStyle}
         src="https://cdn.pixabay.com/photo/2017/02/15/13/40/tulips-2068692__340.jpg"
         alt="img1"
       />
-      <img src={img2} alt="img2" />
+      <img style={imgStyle} src={img2} alt="img2" />
     </div>
   );
 };
