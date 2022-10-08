@@ -1,11 +1,13 @@
 import React from "react";
 
-const Msg = (props) => {
-  console.log(props);
+const Msg = ({ name, age}) => {
+  // const { name } = props;
 
   return (
     <div>
-      <h1>Merhaba {props.name}</h1>
+      <h1>
+        Merhaba {name} {age}
+      </h1>
     </div>
   );
 };
