@@ -9,6 +9,8 @@
 //* Material UI, Styled Component, Sass, Bootstrap v.b harici kutuphaneler kullanilabilir.
 // ? Dahili bir resim eklemek icin import yapmak gereklidir.
 
+import "./Content.css";
+
 import img2 from "../img/spring2.jpg";
 
 const Content = () => {
@@ -31,6 +33,13 @@ const Content = () => {
         alt="img1"
       />
       <img style={imgStyle} src={img2} alt="img2" />
+      <p className="par-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, quaerat
+        exercitationem repellendus, perspiciatis quo beatae magni distinctio
+        quis ullam mollitia cupiditate ipsa consectetur asperiores? Illum dolore
+        at, quidem nulla consequatur reiciendis cupiditate eius iusto fugit
+        omnis dolorum quis odio ut?
+      </p>
     </div>
   );
 };
