@@ -1,11 +1,12 @@
 import React from "react";
+import Msg from "./Msg";
 
 const Person = (props) => {
   const { name, img, tel } = props;
   return (
-    <div>
-      <h1>Merhaba {name}</h1>
-      <img src={img} alt="img1" />
+    <div style={{ textAlign: "center" }}>
+      <Msg name={name} />
+      <img style={{ width: "200px" }} src={img} alt="img1" />
       <p>{tel}</p>
     </div>
   );
