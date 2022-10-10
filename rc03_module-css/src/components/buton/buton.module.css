@@ -1,0 +1,16 @@
+.btn-blue {
+  cursor: pointer;
+  background-color: #0069d9;
+  border-radius: 5px;
+  padding: 8px;
+  color: #fff;
+  width: 5rem;
+  border: none;
+  margin: 5px;
+}
+.btn-blue:hover {
+  color-scheme: ;
+}
+.title {
+  text-align: center;
+}
