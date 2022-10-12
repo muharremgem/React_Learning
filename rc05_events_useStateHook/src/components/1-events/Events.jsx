@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 
 export const Events = () => {
-  const [change, setChange] = useState("");
-
   let message = "EVENT BASED PROGRAM";
 
   const handleClick = () => {
@@ -54,5 +52,3 @@ export default Events;
 
 //?Biz su ana kadar uygulamalarimizda Fonksiyonel Component'leri kullandik.
 //? Yaygin kullanim Fonksiyonel Component'lerdir.
-
-
