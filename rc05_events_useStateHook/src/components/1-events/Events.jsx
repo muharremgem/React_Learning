@@ -1,6 +1,8 @@
 import React from "react";
 
 export const Events = () => {
+  let message = "EVENT BASED PROGRAM";
+
   const handleClick = () => {
     alert("Btn Clicked");
   };
@@ -10,10 +12,13 @@ export const Events = () => {
 
   const handleChange = (event) => {
     console.log(event.target);
+
+    message = "REACT";
   };
 
   return (
     <div className="container text-center mt-4">
+      <h1>{message}</h1>
       <button onClick={handleClick} className="btn btn-success">
         Click
       </button>
