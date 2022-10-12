@@ -1,3 +1,5 @@
+//!UseState ile Kolay ögrenim...
+
 import React from "react";
 import { useState } from "react";
 
@@ -15,7 +17,7 @@ const UseStateCounter = () => {
   };
 
   const incAge = () => {
-    setPerson({...person, age: person.age + 1});
+    setPerson({ ...person, age: person.age + 1 });
   };
 
   return (
@@ -42,7 +44,7 @@ const UseStateCounter = () => {
         <h1>{person.surname} </h1>
         <h1>{person.age} </h1>
         <button onClick={incAge} className="btn btn-info">
-          inc age
+          INC AGE
         </button>
       </section>
     </div>
