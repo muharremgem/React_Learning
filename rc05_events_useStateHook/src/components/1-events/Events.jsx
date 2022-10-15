@@ -1,7 +1,17 @@
-import React from "react";
-import { useState } from "react";
+// * =======================================================
+// *                     EVENTS
+// * =======================================================
 
-export const Events = () => {
+//? ReactJS, Tarayicilar arasi uyumluluk ve performans artisi gibi
+//? sebeplerden oturu Sentetik Event olarak adilandirilan Olaylari
+//? kullanir. Sentetik Event, aslinda tarayicinin dogal event'larinin
+//? bir sarmalayici (Wrapper) arabirimle ortulmesi ile olusur. Bu sayede,
+//? React ortaminda kullanilan event'larin bilindik tarayicilarda
+//? sorunsuz calismasini saglanir.
+
+//? Ayrinti icin : https://reactjs.org/docs/events.html
+
+const Events = () => {
   let message = "EVENT BASED PROGRAM";
 
   const handleClick = () => {
@@ -11,10 +21,10 @@ export const Events = () => {
     alert(msg);
   };
 
-  const handleChange = (setChange) => {
-    console.log(setChange.target);
-
+  const handleChange = (e) => {
+    console.log(e.target);
     message = "REACT";
+    console.log(message);
   };
 
   return (
@@ -23,15 +33,23 @@ export const Events = () => {
       <button onClick={handleClick} className="btn btn-success">
         Click
       </button>
+
+      {/* Eger bir event fonksiyonunun paremetresi olmasi gerekiyorsa
+      bu fonksiyon bir arrow fonks. tarafindan  cagrilmalidir. Aksi
+      takdirde event fonksiyonu event gerceklesmeden cagirilir */}
       <button
         onClick={() => handleClear("Clear Btn Clicked")}
-        className="btn btn-danger"
+        className="btn btn-dark"
       >
         Clear
       </button>
-      <button onClick={handleChange} className="btn btn-dark">
+
+      <button onClick={handleChange} className="btn btn-danger">
         Change
       </button>
+      {/* <button onClick={(e) => handleChange(e)} className="btn btn-danger">
+        Change
+      </button> */}
     </div>
   );
 };
