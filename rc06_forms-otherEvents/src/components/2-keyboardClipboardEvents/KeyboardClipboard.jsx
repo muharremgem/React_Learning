@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 const KeyboardClipboard = () => {
+  
   const [inputValue, setInputValue] = useState("");
 
   const handleKeyDown = (e) => {
@@ -17,8 +18,10 @@ const KeyboardClipboard = () => {
     e.target.value += e.clipboardData.getData("text").toLocaleUpperCase();
     e.preventDefault();
   };
+  
 
   return (
+    
     <div className="container text-center">
       <h1>CLIPBOARD EVENTS</h1>
       <input
@@ -49,6 +52,7 @@ const KeyboardClipboard = () => {
         rows="10"
         onPaste={handleAreaPaste}
       ></textarea>
+
     </div>
   );
 };
